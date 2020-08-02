@@ -1,0 +1,113 @@
+/*
+body {
+    margin: 0;
+    padding: 0;
+}
+*/
+
+header {
+    position: relative;
+    max-width: 1200px
+    padding: 10px;
+    background: #4267B2;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0,0,0,0);
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    color: white;
+    height: 60px;
+    font-size: 36px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    text-decoration: none;
+    font-family: arial black;
+}
+
+nav {
+    float: right;
+    margin-right: 190px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+nav ul {
+    margin: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background: rgba(0,0,0,0.45);
+    transition: 0.5s;
+    /*border-top: 7px solid green;*/
+}
+
+@media (max-width: 1200px) {
+    header {
+        margin: 1px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color: white;
+    }
+    
+    .nav-bar::before {
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 40px;
+    }
+    
+    .nav-bar.active::before {
+        content: '\f00d';  
+    }
+    
+    nav {
+        display: none;
+    }
+    
+    nav.active {
+        display: block;
+        width: 100%;
+    }
+    
+    nav.active ul {
+        display: block;
+    }
+    
+    nav.active ul li {
+        margin: 0;
+    }
+}
+
+
