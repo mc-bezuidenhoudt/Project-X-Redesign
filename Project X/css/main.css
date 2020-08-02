@@ -1,18 +1,18 @@
-/*
 body {
     margin: 0;
     padding: 0;
+    background-image: url("C:/Users/mario/OneDrive/Desktop/app/Project X/images/globe-network.jpg");
+    background-repeat: no-repeat;
 }
-*/
+
 
 header {
-    position: relative;
-    max-width: 1200px
-    padding: 10px;
     background: #4267B2;
-    box-sizing: border-box;
-    box-shadow: 0 2px 5px rgba(0,0,0,0);
     font-family: 'Poppins', sans-serif;
+    margin-top: -8px;
+    max-width: 1390px;
+    padding: 1px;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -60,7 +60,6 @@ nav ul li a {
 nav ul li a.active, nav ul li a:hover {
     background: rgba(0,0,0,0.45);
     transition: 0.5s;
-    /*border-top: 7px solid green;*/
 }
 
 @media (max-width: 1200px) {
@@ -110,4 +109,28 @@ nav ul li a.active, nav ul li a:hover {
     }
 }
 
+.main {
+    width: 1199px;
+    height: 500px;
+    background: white;
+    margin: 0 auto;
+    margin-top: 399px;
+    box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);
+    border-top: 7px solid green;
+    border-bottom: 7px solid green;
+}
 
+footer {
+    height: 200px;
+    width: 1199px;
+    background: red;
+}
+
+hr {
+    margin-top: 20px;
+    width: 1100px;
+    height: 5px;
+    background: beige;
+    border: none;
+    border-radius: 14px;
+}
