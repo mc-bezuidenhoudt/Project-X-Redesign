@@ -1,68 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
     <link href="C:\Users\mario\OneDrive\Desktop\app\Project X\css\main.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 </head>
     
 <body>
-    
-</body>
-    <header>
-        <a href="#" class="logo">Logo</a>
-        <div class="nav-bar"></div>
-        <nav>
-            <ul>
+    <nav>
+        <div id="logo">Your Logo here</div>
+
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Services</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li>
+                    <!-- Drop Down Tier -->
+                    <label for="drop-1" class="toggle">Our Services +</label>
+                    <a href="#">Our Services</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="#">Vehicle & Asset Live Video Tracking</a></li>
+                        <li><a href="#">High Speed Security Camera Solutions</a></li>
+                        <li><a href="#">Custom Solar Solutions</a></li>
+                        <li><a href="#">Networking Solutions</a></li>
+                        <li><a href="#">Access Control Solutions</a></li>
+                    </ul> 
+
+                </li>
+                <li><a href="#">Contact Us</a>
             </ul>
-        </nav>
-        <div class="clearfix"></div>
-    </header>
+    </nav>
     
-    <div class="main">
-    <hr>
+    <div class="container"></div>
     <br>
+    <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i>
+    </a>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <footer>FOOTER</footer>
-    </div>
-    
-    <script
-  src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
-    <script>
-        $('.nav-bar').click(function(){
-            $('.nav-bar').toggleClass('active')
-            $('nav').toggleClass('active')
-        })
-    </script>
+</body>
 </html>
