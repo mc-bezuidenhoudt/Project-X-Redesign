@@ -16,7 +16,7 @@ a, #logo {
     font-family: 'Open Sans', sans-serif;
 }
 
-.container {
+.main {
 	margin: 0 auto;
 	/*max-width: 890px;*/
     width: 1200px;
@@ -35,7 +35,7 @@ a, #logo {
 nav { 
 	margin:0;
 	padding: 0;
-	background-color: darkblue;
+	background-color: rgba(31, 73, 125, 1.0);
     position: fixed;
     top: 0;
     width: 100%;
@@ -66,14 +66,13 @@ nav ul {
 	margin:0;
 	list-style: none;
 	position: relative;
-    
 }
 	
 /* Positioning the navigation items inline */
 nav ul li {
 	display:inline-block;
 	float: left;
-	background-color: darkblue;
+	background-color: rgba(31, 73, 125, 1.0);
 }
 
 /* Styling the links */
@@ -86,8 +85,9 @@ nav a {
     margin-right: 10px;
 }
 
-
-nav ul li ul li:hover { background: #000000; }
+nav ul li ul li:hover { 
+    background: #000000;
+}
 
 /* Background color change on Hover */
 nav a:hover { 
@@ -128,13 +128,19 @@ ul li a.active {
 .gotopbtn {
     width: 50px;
     height: 50px;
-    background: darkblue;
+    background: rgba(31, 73, 125, 1.0);
     color: white;
     padding: 10px;
     text-align: center;
     margin-left: 680px;
     border-radius: 100%;
     line-height: 70px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
 }
 
 /* Change ' +' in order to change the Dropdown symbol */
@@ -254,5 +260,21 @@ li > a:only-child:after { content: ''; }
 		display:block;
 		width: 94%;
 	}
+}
 
+@media all and (max-width: 500px) {
+    .main {
+        border-radius: 17px;
+        width: auto;
+        overflow: visible;
+    }
+    
+    .gotopbtn {
+        margin-left: 225px;
+    }
+    
+    body {
+        background:rgba(31, 73, 125, 1.0);
+
+    }
 }
