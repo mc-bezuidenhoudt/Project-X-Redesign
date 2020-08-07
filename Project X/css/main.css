@@ -137,10 +137,33 @@ ul li a.active {
     line-height: 70px;
 }
 
-img {
-    width: 100%;
-    height: auto;
-    margin-top: 60px;
+.footer {
+    background: rgba(31, 73, 125, 1.0);
+    height: 160px;
+    text-align: center;
+/*
+    width: 1200px;
+    margin: 0 auto;
+*/
+    /*margin-top: -19px;*/
+/*    box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);*/
+}
+
+.footer li {
+    display: inline-block;
+    padding: 10px;
+    line-height: 190px;
+    margin-right: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
 
 /* Change ' +' in order to change the Dropdown symbol */
@@ -175,12 +198,12 @@ li > a:only-child:after { content: ''; }
 	/* Stylinf the toggle lable */
 	.toggle {
 		display: block;
-		background-color: darblue;
-		padding:14px 20px;	
-		color:#FFF;
-		font-size:17px;
-		text-decoration:none;
-		border:none;
+		padding: 14px 20px;	
+		color: #FFF;
+		font-size: 17px;
+		text-decoration: none;
+		border: none;
+        font-family: 'Open Sans', sans-serif;
 	}
 
 	.toggle:hover {
@@ -196,7 +219,7 @@ li > a:only-child:after { content: ''; }
 	nav ul li {
 		display: block;
 		width: 100%;
-		}
+    }
 
 	nav ul ul .toggle,
 	nav ul ul a {
@@ -217,7 +240,7 @@ li > a:only-child:after { content: ''; }
   nav ul ul ul a{
 		padding:14px 20px;	
 		color:#FFF;
-		font-size:17px; 
+		font-size:17px;
 	}
   
   
@@ -251,7 +274,6 @@ li > a:only-child:after { content: ''; }
 		/* has to be the same number as the "width" of "nav ul ul li" */ 
 
 	}
-
 }
 
 @media all and (max-width : 330px) {
@@ -264,17 +286,12 @@ li > a:only-child:after { content: ''; }
 
 @media all and (max-width: 500px) {
     .main {
-        border-radius: 17px;
+        border-top-left-radius: 17px;
+        border-top-right-radius: 17px;
         width: auto;
-        overflow: visible;
     }
     
     .gotopbtn {
         margin-left: 225px;
-    }
-    
-    body {
-        background:rgba(31, 73, 125, 1.0);
-
     }
 }
