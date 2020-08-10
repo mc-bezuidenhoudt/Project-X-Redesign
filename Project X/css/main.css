@@ -5,8 +5,6 @@ body, html {
 body {
     margin: 0;
 	padding: 0;
-    background-image: url("C:/Users/mario/OneDrive/Desktop/app/Project X/images/globe-network.jpg");
-    background-repeat: no-repeat;
 }
 
 a, #logo {
@@ -16,14 +14,21 @@ a, #logo {
     font-family: 'Open Sans', sans-serif;
 }
 
+img {
+    width: 100%;
+/*    height: 600px;*/
+}
+
 .main {
 	margin: 0 auto;
 	/*max-width: 890px;*/
-    width: 1200px;
-    height: 800px;
-    margin-top: 480px;
+    width: 100%;
+    min-height: 800px;
     box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);
     background: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: -3px;
 }
 
 .toggle,
@@ -36,7 +41,7 @@ nav {
 	margin:0;
 	padding: 0;
 	background-color: rgba(31, 73, 125, 1.0);
-    position: fixed;
+/*    position: fixed;*/
     top: 0;
     width: 100%;
 }
@@ -141,18 +146,13 @@ ul li a.active {
     background: rgba(31, 73, 125, 1.0);
     height: 160px;
     text-align: center;
-/*
-    width: 1200px;
-    margin: 0 auto;
-*/
-    /*margin-top: -19px;*/
-/*    box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);*/
+    margin-top: auto;
 }
 
 .footer li {
     display: inline-block;
     padding: 10px;
-    line-height: 190px;
+/*    line-height: 190px;*/
     margin-right: 10px;
 }
 
@@ -164,6 +164,10 @@ ul li a.active {
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+.footer-social-icons ul li a {
+    font-size: 25px;
 }
 
 /* Change ' +' in order to change the Dropdown symbol */
@@ -186,6 +190,7 @@ li > a:only-child:after { content: ''; }
 
 	nav {
 		margin: 0;
+        position: fixed;
 	}
 
 	/* Hide the navigation menu by default */
@@ -286,12 +291,23 @@ li > a:only-child:after { content: ''; }
 
 @media all and (max-width: 500px) {
     .main {
-        border-top-left-radius: 17px;
-        border-top-right-radius: 17px;
         width: auto;
     }
     
     .gotopbtn {
         margin-left: 225px;
+    }
+    
+    img {
+        width: 100%;
+        margin-top: 100px;
+    }
+    
+    .footer .footer-quick-links li {
+        display: block;
+    }
+    
+    .footer {
+        height: 370px;
     }
 }
