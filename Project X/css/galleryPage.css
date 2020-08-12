@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.main-gallery-container {
+    padding-top: 2px;
+}
+
 .gallery {
     border: 1px solid #ccc;
 }
@@ -22,6 +26,11 @@
     float: left;
     width: 25%;
     margin-top: 10px;
+}
+
+h1, p {
+    font-family: arial;
+    padding-left: 20px;
 }
 
 @media only screen and (max-width: 700px) { /* (max-width: 700px) */
