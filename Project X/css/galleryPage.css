@@ -2,18 +2,11 @@
     box-sizing: border-box;
 }
 
-.main-gallery-container {
+#cameras-in-action-container, #project-cameras {
     padding-top: 2px;
-}
-
-.gallery {
-    border: 1px solid #ccc;
-}
-
-.gallery img {
-    width: 100%;
-    top: 30px;
-/*    height: auto;*/
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
 }
 
 .des {
@@ -21,27 +14,30 @@
     text-align: center;
 }
 
-.responsive {
-    padding: 0 6px;
+.column {
     float: left;
-    width: 25%;
-    margin-top: 10px;
+    width: 33.33%;
+    padding: 5px;
 }
 
-h1, p {
-    font-family: arial;
-    padding-left: 20px;
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-@media only screen and (max-width: 700px) { /* (max-width: 700px) */
-    .responsive {
-        width: 50%;
-        margin: 6px 0;
-    }
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 
-@media only screen and (max-width: 500px) {
-    .responsive {
-        width: 100%;
-    }
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }

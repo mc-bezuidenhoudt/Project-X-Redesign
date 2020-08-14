@@ -1,7 +1,9 @@
+/*
 html {
     position: relative;
     min-height: 100%;
 }
+*/
 
 body, html {
     scroll-behavior: smooth;
@@ -10,6 +12,12 @@ body, html {
 body {
     margin: 0;
 	padding: 0;
+}
+
+.main {
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
 }
 
 a, #logo {
@@ -24,17 +32,24 @@ img {
 /*    height: 600px;*/
 }
 
-.main {
-	margin: 0 auto;
-	/*max-width: 890px;*/
-    width: 100%;
-/*    min-height: 800px;*/
-    height: auto;
-    box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);
-    background: red;
-    display: flex;
-    flex-direction: column;
-    margin-top: -3px;
+h1 {
+    font-weight: 700px;
+}
+        
+ p {
+   font-size: 1.25em;
+   display: block;
+   color: #4a4a4a;
+   line-height: 1.5;
+ }
+        
+ h1, p {
+      font-family: Galano Grotesque Alt,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+ }
+
+hr {
+    height: 1px;
+    background: black;
 }
 
 .toggle,
@@ -150,14 +165,10 @@ ul li a.active {
 
 .footer {
     background: rgba(31, 73, 125, 1.0);
-    height: 160px;
+    height: 140px;
     text-align: center;
     margin-top: auto;
-    clear: both;
-    position: absolute;
-    overflow: hidden;
-    margin-top: 120px;
-    width: 100%;
+    bottom: 0;
 }
 
 .footer li {
@@ -174,6 +185,10 @@ ul li a.active {
 }
 
 .footer a:hover {
+    text-decoration: underline;
+}
+
+.footer li a.activate-footer {
     text-decoration: underline;
 }
 
