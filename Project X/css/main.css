@@ -7,9 +7,7 @@ html {
 
 body, html {
     scroll-behavior: smooth;
-}
-
-body {
+    height: 100%;
     margin: 0;
 	padding: 0;
 }
@@ -18,6 +16,7 @@ body {
     width: 900px;
     height: auto;
     margin: 0 auto;
+    margin-top: 50px;
 }
 
 a, #logo {
@@ -62,9 +61,10 @@ nav {
 	margin:0;
 	padding: 0;
 	background-color: rgba(31, 73, 125, 1.0);
-/*    position: fixed;*/
     top: 0;
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 #logo {
@@ -182,6 +182,7 @@ ul li a.active {
     text-decoration: none;
     font-size: 17px;
     font-family: 'Open Sans', sans-serif;
+    color: white;
 }
 
 .footer a:hover {
@@ -217,6 +218,7 @@ li > a:only-child:after { content: ''; }
 	nav {
 		margin: 0;
         position: fixed;
+/*        overflow: visible;*/
 	}
 
 	/* Hide the navigation menu by default */
@@ -305,6 +307,10 @@ li > a:only-child:after { content: ''; }
 		/* has to be the same number as the "width" of "nav ul ul li" */ 
 
 	}
+    
+    .hero-image {
+        margin-top: 120px
+    }
 }
 
 @media all and (max-width : 330px) {
@@ -336,5 +342,11 @@ li > a:only-child:after { content: ''; }
     
     .footer {
         height: 370px;
+    }
+}
+
+@media all and (max-width: 798px) {
+    .main {
+        padding: 3em 2.5rem;
     }
 }

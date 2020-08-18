@@ -70,4 +70,8 @@ form {
     width: 100%;
     margin-top: 0;
   }
+    
+    #direct-contact {
+        padding: 3em 2.5rem;
+    }
 }
