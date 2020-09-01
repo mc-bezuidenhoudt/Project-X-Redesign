@@ -4,16 +4,14 @@
     <link href="C:\Users\mario\OneDrive\Desktop\app\Project X\css\main.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <style>
-        #pic {
-            width: 340px;
-            height: 240px;
-            float: right;
-            
-        }
 
-        li {
+        .listItems-main {
             color: #4a4a4a;
             font-size: 1.25em;
             line-height: 1.5;
@@ -21,41 +19,47 @@
         }
 
     </style>
-    
 </head>
     
 <body>
+    <!-- BEGINING NAVIGATION SECTION -->
     <nav>
-        <div id="logo">Your Logo here</div>
+        <div class="logo">XCOM</div>
 
-        <label for="drop" class="toggle">Menu</label>
-        <input type="checkbox" id="drop" />
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About Us</a></li>
-                <li>
-                    <!-- Drop Down Tier -->
-                    <label for="drop-1" class="toggle">Our Services +</label>
-                    <a href="#">Our Services</a>
-                    <input type="checkbox" id="drop-1"/>
-                    <ul>
-                        <li><a href="#">Vehicle & Asset Live Video Tracking</a></li>
-                        <li><a href="#">High Speed Security Camera Solutions</a></li>
-                        <li><a href="#">Custom Solar Solutions</a></li>
-                        <li><a href="#">Networking Solutions</a></li>
-                        <li><a href="#">Access Control Solutions</a></li>
-                    </ul> 
-
-                </li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact Us</a>
-            </ul>
+        <label for="one-btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="one-btn">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <li>
+                <label for="two-btn" class="show">Our Services</label>
+                <a href="#">Our Services +</a>
+                <input type="checkbox" id="two-btn">
+                <ul>
+                    <li><a href="#">Vehicle & Asset Live Video Tracking</a></li>
+                    <li><a href="#">High Level Security Camera Solutions</a></li>
+                    <li><a href="#">Custom Solar Solutions</a></li>
+                    <li><a href="#">Networking Solutions</a></li>
+                    <li><a href="#">Access Control Solutions</a></li>
+                </ul>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
     </nav>
+    <!-- END OF NAVIGATION SECTION -->
     
-    <img src="C:\Users\mario\OneDrive\Desktop\app\Project X\images\bann.jpg">
+    <div class="hero-image">
+        <div class="text">
+            <p class="paragraph-hero">Welcome, We Are</p>
+            <h1 id="heading-hero">Excellent Communication</h1>
+            <p class="paragraph-hero">Excellent In Service Delivery</p>
+        </div>
+    </div>
     
     <div class="main">
-        
         <h1 style="padding-top: 20px;">About Us</h1>
         
         <img src="C:\Users\mario\OneDrive\Desktop\app\Project X\images\gallery\directors.jpg">
@@ -65,7 +69,7 @@
         
         <p>XCOM’s key focus is as a provider of innovative solutions in the “UniFied Communications” space. XCOM’s play in this space has been facilitated by convergence which itself has been made possible by the confluence of three key elements namely:</p>
         
-        <ul>
+        <ul class="listItems-main">
             <li>Liberalisation of the telecommunications sector</li>
             <li>Enabling technology and</li>
             <li>nnovative business modelling.</li>
@@ -84,7 +88,7 @@
         
         <p>XCOM has positioned itself to assist the Government (and its organs) and the private sector to meet their key strategic and development goals. At a holistic level, this eco-system is directed towards assisting government to meet its key strategic and development goals which are:</p>
         
-        <ul>
+        <ul class="listItems-main">
             <li>Service Delivery</li>
             <li>Economic Development</li>
             <li>Poverty alleviation</li>
@@ -95,7 +99,7 @@
         
         <p>These central goals translate into the following:</p>
         
-        <ul>
+        <ul class="listItems-main">
             <li>Improve operational efficiencies</li>
             <li>Enhance service delivery</li>
             <li>Promote and facilitate local economic development</li>
@@ -122,17 +126,16 @@
         
         <p>XCOM’s positioning as a solutions provider to the African public sector is unique as amplified by its USP (unique selling proposition) as enumerated hereunder:</p>
         
-        <ul>
+        <ul class="listItems-main">
             <li>Locally Developed and Owned Technology (carrier-grade/robust/innovative)</li>
             <li>Ten year history with solid track record into capacity to deliver</li>
             <li>Extensive Resource Base (SA/Namibia/Lesotho/Botswana)</li>
             <li>Key Strategic Alliances with Industry Leaders</li>
             <li>Entrepreneurial Driven Co/Management team made up of Industry Stalwarts</li>
         </ul>
-        
     </div>
     
-    <!--Footer Begins-->
+     <!--Footer Begins-->
     <div class="footer">
         <div class="footer-social-icons">
             <ul>
@@ -156,7 +159,11 @@
     </div>
     <!--Footer Ends-->
     
-    <!--<a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i>
-    </a>-->
+    <script>
+        $('.icon').click(function () {
+            $('span').toggleClass("cancel");
+        });
+    </script>
 </body>
+
 </html>

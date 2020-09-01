@@ -4,126 +4,51 @@
     <link href="C:\Users\mario\OneDrive\Desktop\app\Project X\css\main.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-    <style>
-/*
-        #pic {
-            width: 200px;
-            height: 280px;
-            float: left;
-            margin-right: 10px;
-            margin-top: 8px;
-        }
-*/
-        
-        /* The hero image */
-        .hero-image {
-          /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("C:/Users/mario/OneDrive/Desktop/app/Project X/images/banner3.jpg");
-
-          /* Set a specific height */
-          height: 91%;
-
-          /* Position and center the image to scale nicely on all screens */
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          position: relative;
-        }
-
-        /* Place text in the middle of the image */
-        .text {
-          text-align: center;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: white;
-          width: 150%;
-        }
-        
-        .text h1 {
-            font-size: 50px;
-            text-transform: uppercase;
-            border-top: 4px solid white;
-            border-bottom: 4px solid white;
-            display: inline-block;
-            margin-top: 14px;
-            margin-bottom: 14px;
-            padding: 20px;
-        }
-        
-        span {
-            font-family: Galano Grotesque Alt,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-            font-size: 23px;
-            display: block;
-        }
-/*
-        
-        .container h1 {
-            font-size: 72px;
-            letter-spacing: 0.2em;
-            display: inline-block;
-            text-transform: uppercase;
-
-        }
-        
-        .container h1 span {
-            border-top: 4px solid white;
-            border-bottom: 4px solid white;
-            padding: 6px 14px;
-        }
-        
-        .text {
-            margin: 20px;
-            font-size: 26px;
-            display: block;
-        }
-*/
-    </style>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
     
 <body>
+    <!-- BEGINING NAVIGATION SECTION -->
     <nav>
-        <div id="logo">Your Logo here</div>
+        <div class="logo">XCOM</div>
 
-        <label for="drop" class="toggle">Menu</label>
-        <input type="checkbox" id="drop" />
-        <ul class="menu">
+        <label for="one-btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="one-btn">
+        <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li>
-                <!-- Drop Down Tier -->
-                <label for="drop-1" class="toggle">Our Services +</label>
-                <a href="#">Our Services</a>
-                <input type="checkbox" id="drop-1"/>
+                <label for="two-btn" class="show">Our Services</label>
+                <a href="#">Our Services +</a>
+                <input type="checkbox" id="two-btn">
                 <ul>
                     <li><a href="#">Vehicle & Asset Live Video Tracking</a></li>
-                    <li><a href="#">High Speed Security Camera Solutions</a></li>
+                    <li><a href="#">High Level Security Camera Solutions</a></li>
                     <li><a href="#">Custom Solar Solutions</a></li>
                     <li><a href="#">Networking Solutions</a></li>
                     <li><a href="#">Access Control Solutions</a></li>
-                </ul> 
-
-                </li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact Us</a>
-         </ul>
+                </ul>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
     </nav>
+    <!-- END OF NAVIGATION SECTION -->
+    
     <div class="hero-image">
         <div class="text">
-            <span>Welcome, We Are</span>
-            <h1>Excellent Communication</h1>
-            <span>Excellent In Service Delivery</span>
+            <p class="paragraph-hero">Welcome, We Are</p>
+            <h1 id="heading-hero">Excellent Communication</h1>
+            <p class="paragraph-hero">Excellent In Service Delivery</p>
         </div>
     </div>
-    <!--<img src="C:\Users\mario\OneDrive\Desktop\app\Project X\images\banner2.jpg" alt="background image">-->
     
-    
-    <div class="main"> <!--Change back to 'main'-->
-        
+    <div class="main">
         <h1>Excellence in service delivery</h1>
             
         <p>The landscape of communications and the internet keeps evolving and now, more than ever before, Africa is on the cusp of a major evolutionary wave. Changes in the regulatory environment have started to improve the provisioning of telephony services and competitiveness. Availability of bandwidth is set to increase dramatically with the arrival of submarine cables and terrestrial fibre optic networks. Mobility, new applications and Web 2.0 technologies will encourage new ways of living, collaborating and working. Things are set to change, and for the better. To thrive and excel in today's business environment, you have to be able to focus on your core business.</p>
@@ -133,18 +58,8 @@
         <p>These transformations are opening up a world of unlimited possibilities. XCOM, a new-age telecommunications company, believes that an uninhibited mind set and vision will shape the world and open the door to a wealth of opportunities. Having pioneered the use of “disruptive technologies” in the telecommunications environment over the past 10 years, XCOM has made its mark as an innovative thought leader in the local telecommunications scene.</p>
        
         <br>
+        <hr>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        
-        <!--<hr>-->
-        
-        <br>
-        <br>
-        <br>
-        
         
         <img src="C:\Users\mario\OneDrive\Desktop\app\Project X\images\gallery\pic2.jpg">
         
@@ -176,7 +91,11 @@
     </div>
     <!--Footer Ends-->
     
-    <!--<a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i>
-    </a>-->
+    <script>
+        $('.icon').click(function () {
+            $('span').toggleClass("cancel");
+        });
+    </script>
 </body>
+
 </html>

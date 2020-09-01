@@ -4,99 +4,55 @@
     <link href="C:\Users\mario\OneDrive\Desktop\app\Project X\css\main.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="C:\Users\mario\OneDrive\Desktop\app\Project X\css\galleryPage.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
     
 <body>
+    <!-- BEGINING NAVIGATION SECTION -->
     <nav>
-        <div id="logo">Your Logo here</div>
+        <div class="logo">XCOM</div>
 
-        <label for="drop" class="toggle">Menu</label>
-        <input type="checkbox" id="drop" />
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li>
-                    <!-- Drop Down Tier -->
-                    <label for="drop-1" class="toggle">Our Services +</label>
-                    <a href="#">Our Services</a>
-                    <input type="checkbox" id="drop-1"/>
-                    <ul>
-                        <li><a href="#">Vehicle & Asset Live Video Tracking</a></li>
-                        <li><a href="#">High Speed Security Camera Solutions</a></li>
-                        <li><a href="#">Custom Solar Solutions</a></li>
-                        <li><a href="#">Networking Solutions</a></li>
-                        <li><a href="#">Access Control Solutions</a></li>
-                    </ul> 
-
-                </li>
-                <li><a href="gallery.html" class="active">Gallery</a></li>
-                <li><a href="contact.html">Contact Us</a>
-            </ul>
+        <label for="one-btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="one-btn">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li>
+                <label for="two-btn" class="show">Our Services</label>
+                <a href="#">Our Services +</a>
+                <input type="checkbox" id="two-btn">
+                <ul>
+                    <li><a href="#">Vehicle & Asset Live Video Tracking</a></li>
+                    <li><a href="#">High Level Security Camera Solutions</a></li>
+                    <li><a href="#">Custom Solar Solutions</a></li>
+                    <li><a href="#">Networking Solutions</a></li>
+                    <li><a href="#">Access Control Solutions</a></li>
+                </ul>
+            </li>
+            <li><a href="gallery.html"  class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
     </nav>
+    <!-- END OF NAVIGATION SECTION -->
     
-    <img src="C:\Users\mario\OneDrive\Desktop\app\Project X\images\bann.jpg">
-    
-    <!--Gallery Content Begins-->
-    
-    <div id="cameras-in-action-container">
-        <h1>Feel free to contact us for your requirements</h1>
-        <p>Here, you can view some of our cameras in action</p>
-        <div class="row">
-          <div class="column">
-            <img src="C:\Users\mario\OneDrive\Desktop\app\Project X\images\gallery\camera1.jpg" style="width: 100%">
-            <div class="des">Description of image</div>
-          </div>
-            
-          <div class="column">
-            <img src="C:\Users\mario\OneDrive\Desktop\app\Project X\images\gallery\camera5.jpg" style="width: 100%">
-            <div class="des">Description of image</div>
-          </div>
-            
-          <div class="column">
-            <img src="C:\Users\mario\OneDrive\Desktop\app\Project X\images\gallery\camera6.jpg" style="width: 100%">
-            <div class="des">Description of image</div>
-          </div>
-            
-          <div class="column">
-            <img src="C:\Users\mario\OneDrive\Desktop\app\Project X\images\gallery\camera2.jpg" style="width: 100%">
-            <div class="des">Description of image</div>
-          </div>
-            
-          <div class="column">
-            <img src="C:\Users\mario\OneDrive\Desktop\app\Project X\images\gallery\camera3.jpg" style="width: 100%">
-            <div class="des">Description of image</div>
-          </div>
-          
-        </div>
-     </div>
-    
-    <br>
-    <hr>
-    
-    <div id="project-cameras">
-        <p style="color: black">Examples of our rural project deployments on Camera, Solar, Wireless and Long Range RFID.</p>
-        <div class="row">
-          <div class="column">
-            <img src="C:\Users\mario\OneDrive\Desktop\app\Project X\images\gallery\examplePic1.jpg" style="width: 100%">
-            <div class="des">Description of image</div>
-          </div>
-            
-          <div class="column">
-            <img src="C:\Users\mario\OneDrive\Desktop\app\Project X\images\gallery\examplePic2.jpg" style="width: 100%">
-            <div class="des">Description of image</div>
-          </div>
-            
-          <div class="column">
-            <img src="C:\Users\mario\OneDrive\Desktop\app\Project X\images\gallery\examplePic3.jpg" style="width: 100%">
-            <div class="des">Description of image</div>
-          </div>
-              
+    <div class="hero-image">
+        <div class="text">
+            <p class="paragraph-hero">Welcome, We Are</p>
+            <h1 id="heading-hero">Excellent Communication</h1>
+            <p class="paragraph-hero">Excellent In Service Delivery</p>
         </div>
     </div>
-    <!--Gallery Content Ends-->
     
-    <!--Footer Begins-->
+    <div class="content-main">
+    
+    </div>
+    
+     <!--Footer Begins-->
     <div class="footer">
         <div class="footer-social-icons">
             <ul>
@@ -106,7 +62,7 @@
                 <li><a href="#"><i class="fa fa-youtube"></i></a></li> 
             </ul>
         </div>
-
+        
         <div class="footer-quick-links">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -116,11 +72,15 @@
                 <li><a href="contact.html">Contact</a></li>           
             </ul>
         </div>
-
+        
     </div>
     <!--Footer Ends-->
     
-    <!--<a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i>
-    </a>-->
+    <script>
+        $('.icon').click(function () {
+            $('span').toggleClass("cancel");
+        });
+    </script>
 </body>
+
 </html>

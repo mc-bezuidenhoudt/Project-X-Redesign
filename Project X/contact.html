@@ -2,107 +2,83 @@
 <html>
 <head>
     <link href="C:\Users\mario\OneDrive\Desktop\app\Project X\css\main.css" type="text/css" rel="stylesheet">
+    <link href="C:\Users\mario\OneDrive\Desktop\app\Project X\css\contactPage.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="C:\Users\mario\OneDrive\Desktop\app\Project X\css\contactPage.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 </head>
     
 <body>
+    <!-- BEGINING NAVIGATION SECTION -->
     <nav>
-        <div id="logo">Your Logo here</div>
+        <div class="logo">XCOM</div>
 
-        <label for="drop" class="toggle">Menu</label>
-        <input type="checkbox" id="drop" />
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li>
-                    <!-- Drop Down Tier -->
-                    <label for="drop-1" class="toggle">Our Services +</label>
-                    <a href="#">Our Services</a>
-                    <input type="checkbox" id="drop-1"/>
-                    <ul>
-                        <li><a href="#">Vehicle & Asset Live Video Tracking</a></li>
-                        <li><a href="#">High Speed Security Camera Solutions</a></li>
-                        <li><a href="#">Custom Solar Solutions</a></li>
-                        <li><a href="#">Networking Solutions</a></li>
-                        <li><a href="#">Access Control Solutions</a></li>
-                    </ul> 
-
-                </li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html" class="active">Contact Us</a>
-            </ul>
+        <label for="one-btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="one-btn">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li>
+                <label for="two-btn" class="show">Our Services</label>
+                <a href="#">Our Services +</a>
+                <input type="checkbox" id="two-btn">
+                <ul>
+                    <li><a href="#">Vehicle & Asset Live Video Tracking</a></li>
+                    <li><a href="#">High Level Security Camera Solutions</a></li>
+                    <li><a href="#">Custom Solar Solutions</a></li>
+                    <li><a href="#">Networking Solutions</a></li>
+                    <li><a href="#">Access Control Solutions</a></li>
+                </ul>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
     </nav>
+    <!-- END OF NAVIGATION SECTION -->
     
-    <img src="C:\Users\mario\OneDrive\Desktop\app\Project X\images\bann.jpg">
-    
-    <div class="main">
-        <h1>Contact Us</h1>
-        
-        <!--Contact Form Begins-->
-        
-        <form action="action_page.php">
-            <div class="row">
-              <div class="col-25">
+    <div class="hero-image">
+        <div class="text">
+            <p class="paragraph-hero">Welcome, We Are</p>
+            <h1 id="heading-hero">Excellent Communication</h1>
+            <p class="paragraph-hero">Excellent In Service Delivery</p>
+        </div>
+    </div>
+
+        <div class="container">
+            <form action="contact.html">
+
                 <label for="fname">First Name</label>
-              </div>
-              <div class="col-75">
                 <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col-25">
                 <label for="lname">Last Name</label>
-              </div>
-              <div class="col-75">
                 <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col-25">
                 <label for="email">Email</label>
-              </div>
-              <div class="col-75">
                 <input type="email" id="mail" name="email" placeholder="Your email.." required>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col-25">
                 <label for="phone">Phone</label>
-              </div>
-              <div class="col-75">
-                <input type="tel" id="phone" name="phone" placeholder="Your phone number..">
-              </div>
-            </div>
+                <input type="number" id="phone" name="phone" placeholder="Your phone number..">
 
-            <div class="row">
-              <div class="col-25">
                 <label for="subject">Subject</label>
-              </div>
-              <div class="col-75">
                 <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-              </div>
-            </div>
 
-            <div class="row sub">
-              <input type="submit" value="Submit">
-            </div>
-  </form>
+                <input type="submit" value="Submit" class="button-submit">
 
-        <!--Contact Form Ends-->
-        
-    <div id="direct-contact">
-        <p>For any questions, please contact us at: <strong style="color: rgba(31, 73, 125, 1.0);">0814424870 / 0818300645</strong></p>    
-        <p>Email: <strong style="color: rgba(31, 73, 125, 1.0);">support@xcom.tech</strong></p>
-    </div>
-        
+            </form>
+       
+        <div id="direct-contact">
+             <p>For any questions, please contact us at: <strong style="color: rgba(31, 73, 125, 1.0);">0814424870 / 0818300645</strong></p>    
+                <p>Email: <strong style="color: rgba(31, 73, 125, 1.0);">support@xcom.tech</strong></p>
+        </div>
     </div>
     
-    <!--Footer Begins-->
+     <!--Footer Begins-->
     <div class="footer">
         <div class="footer-social-icons">
             <ul>
@@ -126,7 +102,11 @@
     </div>
     <!--Footer Ends-->
     
-    <!--<a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i>
-    </a>-->
+    <script>
+        $('.icon').click(function () {
+            $('span').toggleClass("cancel");
+        });
+    </script>
 </body>
+
 </html>
