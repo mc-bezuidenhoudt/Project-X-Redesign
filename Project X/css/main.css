@@ -14,7 +14,7 @@ nav{
   height: 75px;
 }
 
-nav::after{
+nav:after{
   content: '';
   clear: both;
   display: table;
@@ -37,7 +37,7 @@ nav ul{
 }
 
 nav ul li{
-   float: left; 
+  float: left; 
   display: inline-block;
   background: rgba(31, 73, 125, 1.0);
   margin: 0 5px;
@@ -80,7 +80,7 @@ nav ul ul{
   opacity: 0;
   visibility: hidden;
   transition: top .3s;
-  z-index: 1;
+/*  z-index: 1;*/
 }
 
 nav ul ul ul{
@@ -162,40 +162,6 @@ img {
     margin-bottom: 23px;
 }
 
-.footer {
-  background: rgba(31, 73, 125, 1.0);
-  height: 140px;
-  text-align: center;
-  margin-top: auto;
-  bottom: 0;
-}
-
-.footer li {
-  display: inline-block;
-  padding: 10px;
-    line-height: 190px;
-  margin-right: 10px;
-}
-
-.footer a {
-  text-decoration: none;
-  font-size: 17px;
-  font-family: 'Open Sans', sans-serif;
-  color: white;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
-
-.footer li a.activate-footer {
-  text-decoration: underline;
-}
-
-.footer-social-icons ul li a {
-  font-size: 25px;
-}
-
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("C:/Users/mario/OneDrive/Desktop/app/Project X/images/banner3.jpg");
   height: 91%;
@@ -203,6 +169,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  z-index: -1;
 }
 
 .text {
@@ -232,6 +199,38 @@ img {
   color: white;
 }
 
+footer {
+    height: 160px;
+    width: 100%;
+    background: rgba(31, 73, 125, 1.0);
+    font-family: 'Poppins', sans-serif;
+    margin-top: 70px;
+    text-align: center;
+}
+
+footer a{
+    color: white;
+}
+
+footer li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 17px 14px;
+}
+
+footer a:hover {
+    color: cyan;
+    text-decoration: none;
+}
+
+.active-footer {
+    color: cyan;
+}
+
+footer .social-icons ul li {
+    font-size: 25px;
+}
+
 @media screen and (max-width: 500px) {
   .main, #container {
       width: auto;
@@ -241,16 +240,6 @@ img {
     width: 100%;
     height: auto;   
   }
-
-  .footer .footer-quick-links li {
-      display: block;
-  }
-
-  .footer {
-      height: 370px;
-  }
-  
-}
 
 @media screen and (max-width: 798px) {
   .main, #container {
@@ -282,7 +271,8 @@ img {
   }
   nav ul li,nav ul ul li{
     display: block;
-    width: 100%;
+    width: 133%;
+    margin-left: -40px
   }
   nav ul li a:hover{
     box-shadow: none;
@@ -326,7 +316,7 @@ img {
   nav ul ul ul li{
     position: static;
   }
-  [id^=btn]:checked + ul{
+  [id^=one-btn]:checked + ul{
     display: block;
   }
   nav ul ul li{
@@ -334,5 +324,12 @@ img {
   }
   span.cancel:before{
     content: '\f00d';
+  }
+  .active {
+      color: cyan;
+      border-radius: 5px;
+      box-shadow: none;
+      width: 190px;
+      text-decoration: none;
   }
 }

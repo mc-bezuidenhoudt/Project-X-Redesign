@@ -2,9 +2,13 @@
 <html>
 <head>
     <link href="C:\Users\mario\OneDrive\Desktop\app\Project X\css\main.css" type="text/css" rel="stylesheet">
+    
     <link href="C:\Users\mario\OneDrive\Desktop\app\Project X\css\contactPage.css" rel="stylesheet" type="text/css">
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -25,7 +29,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li>
-                <label for="two-btn" class="show">Our Services</label>
+                <label for="two-btn" class="show">Our Services +</label>
                 <a href="#">Our Services +</a>
                 <input type="checkbox" id="two-btn">
                 <ul>
@@ -53,19 +57,19 @@
         <div class="container">
             <form action="contact.html">
 
-                <label for="fname">First Name</label>
+                <label for="fname" class="for-labels">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
 
-                <label for="lname">Last Name</label>
+                <label for="lname" class="for-labels">Last Name</label>
                 <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
 
-                <label for="email">Email</label>
+                <label for="email" class="for-labels">Email</label>
                 <input type="email" id="mail" name="email" placeholder="Your email.." required>
 
-                <label for="phone">Phone</label>
+                <label for="phone" class="for-labels">Phone</label>
                 <input type="number" id="phone" name="phone" placeholder="Your phone number..">
 
-                <label for="subject">Subject</label>
+                <label for="subject" class="for-labels">Subject</label>
                 <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
                 <input type="submit" value="Submit" class="button-submit">
@@ -79,27 +83,24 @@
     </div>
     
      <!--Footer Begins-->
-    <div class="footer">
-        <div class="footer-social-icons">
-            <ul>
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="#"><i class="fa fa-youtube"></i></a></li> 
-            </ul>
-        </div>
-        
-        <div class="footer-quick-links">
+        <footer>
+            <div class="social-icons">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li> 
+                </ul>
+            </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="#">Our Services</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html" class="activate-footer">Contact</a></li>           
+                <li><a href="contact.html" class="active-footer">Contact Us</a></li>       
             </ul>
-        </div>
-        
-    </div>
+        </footer>
+
     <!--Footer Ends-->
     
     <script>

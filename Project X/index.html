@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <link href="C:\Users\mario\OneDrive\Desktop\app\Project X\css\main.css" type="text/css" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
     
@@ -23,7 +28,7 @@
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li>
-                <label for="two-btn" class="show">Our Services</label>
+                <label for="two-btn" class="show">Our Services +</label>
                 <a href="#">Our Services +</a>
                 <input type="checkbox" id="two-btn">
                 <ul>
@@ -67,28 +72,24 @@
     
     </div>
     
-     <!--Footer Begins-->
-    <div class="footer">
-        <div class="footer-social-icons">
+    <!--Footer Begins-->
+    <footer>
+        <div class="social-icons">
             <ul>
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                 <li><a href="#"><i class="fa fa-youtube"></i></a></li> 
             </ul>
-        </div>
-        
-        <div class="footer-quick-links">
-            <ul>
-                <li><a href="index.html" class="activate-footer">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="#">Our Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>           
-            </ul>
-        </div>
-        
-    </div>
+         </div>
+        <ul>
+            <li><a href="index.html" class="active-footer">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>       
+        </ul>
+    </footer>
     <!--Footer Ends-->
     
     <script>
@@ -96,6 +97,7 @@
             $('span').toggleClass("cancel");
         });
     </script>
+
 </body>
 
 </html>
