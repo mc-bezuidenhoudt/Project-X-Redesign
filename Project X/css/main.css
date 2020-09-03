@@ -223,16 +223,26 @@ footer a:hover {
     text-decoration: none;
 }
 
+.footer-social-icons a {
+    padding: 20px;
+    font-size: 1.5em
+}
+
 .active-footer {
     color: cyan;
 }
 
-footer .social-icons ul li {
-    font-size: 25px;
+.header-contact-us {
+    width: 900px;
+    margin: 0 auto;
+    margin-left: 107px;
+    margin-bottom: -30px;
+    margin-top: 30px;
+    padding-top: 20px;
 }
 
 @media screen and (max-width: 500px) {
-  .main, #container {
+  .main, #container, .header-contact-us {
       width: auto;
   }
     
@@ -241,6 +251,7 @@ footer .social-icons ul li {
     height: auto;   
   }
 
+}
 @media screen and (max-width: 798px) {
   .main, #container {
       padding: 3em 2.5rem;
@@ -254,6 +265,24 @@ footer .social-icons ul li {
     .button-submit {
         width: 100%;
         font-size: 40px;
+    }
+    
+    footer {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    footer ul {
+        display: block;
+    }
+    
+    footer ul li {
+        display: block;
+        margin-right: 40px;
+    }
+    
+    .header-contact-us {
+        margin-left: 20px;
     }
 }
 
