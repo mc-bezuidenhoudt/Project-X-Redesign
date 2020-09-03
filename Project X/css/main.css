@@ -12,6 +12,7 @@ body, html{
 nav{
   background: rgba(31, 73, 125, 1.0);
   height: 75px;
+  font-weight: 600;
 }
 
 nav:after{
@@ -52,19 +53,28 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-  color: cyan;
+  color: #4cbb17;
   border-radius: 5px;
-  box-shadow:  0 0 5px #33ffff,
-               0 0 10px #66ffff;
+/*
+  box-shadow:  0 0 5px green,
+               0 0 10px green;
+*/
   width: 190px;
   text-decoration: none;
 }
 
+.active:hover {
+    color: white;
+}
+
 .active {
-  color: cyan;
+  color: white;
+  background: #006b3c;
   border-radius: 5px;
-  box-shadow:  0 0 5px #33ffff,
-               0 0 10px #66ffff;
+/*
+  box-shadow:  0 0 5px #006b3c,
+               0 0 10px #006b3c;
+*/
   width: 190px;
   text-decoration: none;
 }
@@ -76,7 +86,7 @@ nav ul ul li a:hover{
 nav ul ul{
   position: absolute;
   top: 90px;
-  border-top: 3px solid cyan;
+  border-top: 3px solid #4cbb17;
   opacity: 0;
   visibility: hidden;
   transition: top .3s;
@@ -163,8 +173,8 @@ img {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("C:/Users/mario/OneDrive/Desktop/app/Project X/images/banner3.jpg");
-  height: 91%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("C:/Users/mario/OneDrive/Desktop/app/Project X/images/banner1.jpg");
+  height: 92%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -219,7 +229,7 @@ footer li {
 }
 
 footer a:hover {
-    color: cyan;
+    color: #4cbb17;
     text-decoration: none;
 }
 
@@ -229,7 +239,7 @@ footer a:hover {
 }
 
 .active-footer {
-    color: cyan;
+    color: #4cbb17;
 }
 
 .header-contact-us {
@@ -290,6 +300,7 @@ footer a:hover {
   nav ul{
     margin-right: 0px;
     float: left;
+    
   }
   nav .logo{
     padding-left: 30px;
@@ -298,11 +309,12 @@ footer a:hover {
   .show + a, ul{
     display: none;
   }
-  nav ul li,nav ul ul li{
+  nav ul li,nav ul ul li {
     display: block;
-    width: 133%;
-    margin-left: -40px
+    width: 127.1%;
+    margin-left: -40px;
   }
+   
   nav ul li a:hover{
     box-shadow: none;
   }
@@ -315,7 +327,7 @@ footer a:hover {
     cursor: pointer;
   }
   .show:hover{
-    color: cyan;
+    color: #4cbb17;
   }
   .icon{
     display: block;
@@ -355,10 +367,11 @@ footer a:hover {
     content: '\f00d';
   }
   .active {
-      color: cyan;
+      color: #4cbb17;
       border-radius: 5px;
       box-shadow: none;
       width: 190px;
       text-decoration: none;
+      background: rgba(31, 73, 125, 1.0);
   }
 }
